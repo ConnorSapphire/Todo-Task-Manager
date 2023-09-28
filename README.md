@@ -1,5 +1,24 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## BEFORE ANYTHING:
+
+You must setup the database locally:
+
+Add a .env file to the parent directory containing:
+DATABASE_URL="file:./dev.db"
+
+Run:
+```bash
+npx prisma migrate dev --name init
+```
+
+Now you're ready to go:
+Run:
+```bash
+npm run dev
+```
+To start.
+
 ## Getting Started
 
 First, run the development server:
